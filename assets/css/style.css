@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", Helvetica, Arial;
+  background: #242727;
+  color: #fff;
+  height: 100vh;
+  line-height: 1.6;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.lead {
+  font-size: 1.5rem;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: rgba(0,0,0,0);
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.navbar ul li {
+  /*margin: 0 0.5rem;*/
+  padding: 1rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+}
+
+.navbar ul li a:hover {
+  color: #1A4869;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+section h1 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+/* Section Images */
+section#mint {
+  /*Background images credit:
+  Photo by Vlad Alexandru Popa: https://www.pexels.com/photo/closeup-photo-of-assorted-color-marble-ball-lot-1480966/*/
+  background: url('../img/pexels-vlad-alexandru-popa-1480966.jpeg') no-repeat center center/cover;;
+}
+
+section#about {
+  /*uses default background color*/
+}
+
+section#about ul {
+  display: flex;
+  list-style: none;
+  width: 25%;
+  justify-content: center;
+}
+
+section#about ul li {
+  margin: 0 0.5rem;
+  padding: 1rem;
+}
+
+section#roadmap {
+ background-color:  #24373B;
+}
+
+section#team {
+  background-color:  #1A4869;
+}
+/*
+.mint-button {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 10px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+*/
+.roadmap-container {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0;
+}
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding: 10px;
+  background-color: #242727;
+  color: white;
+  border-radius: 30px 30px 30px 30px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+.timeline ul li:last-child {
+  margin-bottom: 0;
+  list-style: none;
+}
+.timeline-content h1 {
+  font-weight: 500;
+  font-size: 25px;
+}
+.timeline-content p {
+  font-weight: 300;
+  font-size: 16px;
+}
+.timeline-content .date {
+  font-size: 11px;
+  margin-bottom: 4px;
+  letter-spacing: 4px;
+}
+
+.team-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+.team-social a {
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+.team-social a:hover {
+  color: #1A4869;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  background: rgba(0,0,0,0);
+}
+
+.footer p a {
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+.footer p a:hover {
+  color: #1A4869;
+}

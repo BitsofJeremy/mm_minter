@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+  Background images credit:
+  Photo by Vlad Alexandru Popa: https://www.pexels.com/photo/closeup-photo-of-assorted-color-marble-ball-lot-1480966/
+   -->
+
+   <!-- Palette Color extracted from background image:
+   https://coolors.co/242727-1a4869-24373b-2e4d23 -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MetaMarbles</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/mm_card_popup.css">
+  <link rel="stylesheet" href="./assets/css/mm_mint_popup.css">
+
+  <!-- Feather Icons -->
+  <!-- https://feathericons.com/ -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+</head>
+<body>
+
+<div class="container">
+  <nav class="navbar">
+      <ul>
+          <li><a href="#mint">Mint</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
+          <li><a href="#team">Team</a></li>
+      </ul>
+  </nav>
+
+  <!-- Mint Section -->
+  <section id="mint">
+    <h1>MetaMarbles</h1>
+    <h3>Get your own 2D MetaMarble NFT Now!</h3>
+    <a href="#mint-popup" class="mint-button">
+        MINT
+    </a>
+    <!-- Mint Popup -->
+    <div class="mint-popup" id="mint-popup">
+      <div class="mint-popup-inner">
+        <a href="#"><button class="mint-close-button">X</button></a>
+        <h4>MINT NOW</h4>
+        <p>
+          You will be minting 2D MetaMarble NFTs on the Ethereum Rinkeby testnet.
+        </p>
+            <div class="info-container">
+              <div>
+                <h4>Total Supply</h4>
+                <p id="totalSupply">888</p>
+              </div>
+              <div>
+                <h4>Price Per Mint</h4>
+                <p id="pricePerMint">0.001 ETH</p>
+              </div>
+              <div>
+                <h4>Max Per Wallet</h4>
+                <p id="maxPerMint">5</p>
+              </div>
+            </div>
+            <hr/>
+            <div class="mint-qty">
+              <span>
+                <button class="input-number-decrement mint-btn" id="mintDecrement">–</button>
+                <input
+                  id="mintInput"
+                  class="input-number mint-btn"
+                  type="number"
+                  value="1"
+                  min="1"
+                  max="5"
+                />
+                <button class="input-number-increment mint-btn" id="mintIncrement">+</button>
+              </span>
+              <button id="setQtyMax" class="mint-btn">Max</button>
+            </div>
+            <hr/>
+            <div class="total-price-container">
+              <h4>Total</h4>
+              <p id="totalPrice">.001 ETH</p>
+            </div>
+          <button id="mint-btn" class="mint-btn">Mint Your NFT</button>
+          </div>
+      </div>
+    <!-- End Mint Popup -->
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+      <h1>About</h1>
+      <p class="">Metamarbles is a decentralized NFT project for collecting rarified virtual marbles on the Ethereum blockchain.</p>
+      <a href="#mm-card-popup" class="mm-card-samples-button">
+        MetaMarble Samples
+      </a>
+
+        <!-- Card Modal Popup -->
+      <div class="mm-card-popup" id="mm-card-popup">
+      <div class="mm-card-popup-inner">
+
+      <div class="column">
+            <div class="mm-card">
+            <div class="mm-card-image" ></div>
+            <div class="mm-card-text">
+              <p>Each one is unique based on 7 different traits.</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="column">
+          <div class="mm-card">
+            <div class="mm-card-image2" ></div>
+            <div class="mm-card-text">
+              <p>There are only 888 available.</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="column">
+          <div class="mm-card">
+            <div class="mm-card-image3" ></div>
+            <div class="mm-card-text">
+              <p>Which one will you get?</p>
+            </div>
+          </div>
+      </div>
+      <a href="#"><button class="mm-card-popup-close-button">X</button></a>
+      </div>
+    </div>
+  <!-- End Card Modal Popup -->
+  </section>
+
+  <!-- Roadmap Section -->
+  <section id="roadmap">
+    <h1>Roadmap</h1>
+    <p class="lead">Our current trajectory into the Metaverse.</p>
+    <!-- Roadmap Start -->
+    <div class="roadmap-container">
+      <div class="timeline">
+        <ul>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">Q3 - 2022</h3>
+              <h1>First 2D MetaMarble NFT Drop</h1>
+              <p>Minting Now!</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">Q4 - 2022</h3>
+              <h1>3D MetaMarble NFT Drop</h1>
+              <p>Trade your 2D NFTs for 3D NFTs</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">Q1 - 2023</h3>
+              <h1>MetaMarble Games</h1>
+              <p></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team">
+      <h1>Team</h1>
+        <p class="lead">
+          <img class="team-img" src="./assets/img/deafmice_logo_500x500_blk_wht.png" alt="deafmice logo">
+          deafmice
+          <p class="team-social">
+            <a href="https://twitter.com/deafmice">
+              <i data-feather="twitter" alt="twitter"></i>
+            </a>
+            <a href="https://deafmice.com">
+              <i data-feather="globe" alt="website"></i>
+            </a>
+          </p>
+        </p>
+  </section>
+</div>
+
+<!-- Add footer -->
+<div class="footer">
+  <p>Made by <a href="https://deafmice.com">deafmice</a> | Copyright © 2022</p>
+</div>
+
+    <!-- Feather Icons -->
+    <script>feather.replace()</script>
+
+    <!-- Tilt for cards -->
+    <script src="./assets/js/vanilla-tilt.min.js"></script>
+    <script>
+      // Check for mobile
+      if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        console.log('is mobile')
+      } else {
+        console.log('isnt mobile')
+        VanillaTilt.init(document.querySelectorAll(".mm-card"),{
+        glare: true,
+        reverse: true,
+        scale: 1.1,
+        "max-glare": 0.2
+      });
+      }
+    </script>
+</body>
+</html>

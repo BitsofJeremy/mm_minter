@@ -1,0 +1,121 @@
+
+.mm-card-samples-button {
+  padding: 12px 16px;
+  text-align: center;
+  margin: 10px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 1.5px solid #fff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.mm-card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 350px 90px;
+  grid-template-areas: "image" "text";
+  border-radius: 7px;
+  /*text box color*/
+  background: #242727;
+  color:white;
+  /*card drop shadow*/
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  font-family: roboto;
+  text-align: center;
+  cursor: pointer;
+  margin:15px;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+.mm-card-image {
+  grid-area: image;
+  background: url("../img/img0.png");
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  background-size: cover;
+}
+
+.mm-card-text {
+  grid-area: text;
+  margin: 20px;
+  transform: translateZ(50px);
+}
+.mm-card-text p {
+  color: #fff;
+  margin-top:-5px;
+  font-size:20px;
+  font-weight: 500;
+}
+
+/*mm-card2*/
+.mm-card-image2 {
+  background: url("../img/img1.png");
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  background-size: cover;
+}
+/*mm-card3*/
+.mm-card-image3 {
+  background: url("../img/img2.png");
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  background-size: cover;
+}
+
+.mm-card-popup-close-button {
+  padding: 10px 14px;
+  text-align: center;
+  margin: 10px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 1.5px solid #fff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.mm-card-popup {
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  /*fix for small mobile devices not scrolling*/
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+}
+
+.column {
+  float: left;
+}
+
+.mm-card-popup-inner {
+  /*Inside the modal pop up settings*/
+  color: #fff;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.7);
+  color: #fff;
+  margin: auto;
+  padding: 20px;
+  border: 3px solid #fff;
+  border-radius: 60px;
+}
+
+.mm-card-popup:target {
+  opacity: 1;
+  pointer-events: all;
+}
+
